@@ -6,12 +6,15 @@ import lombok.Setter;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
 @Table(name = "TB_PUBLISHER")
 @Getter
 @Setter
+
 public class PublisherEntity implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -22,7 +25,6 @@ public class PublisherEntity implements Serializable {
 
     @Column(nullable = false,unique = true)
     private String nome;
-
 
 
 }

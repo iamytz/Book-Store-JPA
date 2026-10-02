@@ -13,6 +13,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Table(name = "TB_BOOK")
+
 public class BookEntity implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -23,5 +24,6 @@ public class BookEntity implements Serializable {
 
     @Column(nullable = false,unique = true)
     private String title;
+
 
 }
